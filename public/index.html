@@ -4,21 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Motion Detector</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style_main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <h1>Motion Detector Dashboard</h1>
-  <div id="status">
-    <p><strong>Motion Status:</strong> <span id="motionStatus">Waiting...</span></p>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <h2>Homify</h2>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="#">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-chart-bar"></i>
+          <span>Statistics</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Log out</span>
+        </a>
+      </li>
+    </ul>
   </div>
-  <div id="controls">
-    <button id="start">Start Monitoring</button>
-    <button id="stop">Stop Monitoring</button>
-  </div>
-  <div id="logs">
-    <h2>Event Logs</h2>
-    <textarea id="eventLogs" rows="10" cols="50" readonly></textarea>
-  </div>
+
+  <div class="center">
+    <div class="welcome-content">
+        <h1>Welcome to Homify</h1>
+        <h2>Your home's safety is our top priority!</h2>
+        <p>Discover how Homify helps you keep your home secure with ease.</p>
+        <button onclick="window.location.href='dashboard.html'">Go to Dashboard</button>
+    </div>
+    </div>
   <script src="script.js"></script>
 </body>
 </html>

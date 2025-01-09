@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motion Detector</title>
+  <link rel="stylesheet" href="./style_dashboard.css">
+</head>
+<body>
+  <h1>Motion Detector Dashboard</h1>
+  <div id="status">
+    <p><strong>Motion Status:</strong> <span id="motionStatus">Waiting...</span></p>
+  </div>
+  <div id="controls">
+    <button id="start">Start Monitoring</button>
+    <button id="stop">Stop Monitoring</button>
+  </div>
+  <div id="logs">
+    <h2>Event Logs</h2>
+    <textarea id="eventLogs" rows="10" cols="50" readonly></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

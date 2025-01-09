@@ -1,0 +1,137 @@
+/* General Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7ff; /* Light baby blue for the background */
+  color: #333; /* Neutral dark gray text */
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background: #4a647a; /* Blue-gray for the sidebar */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar .logo h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e0f7ff; /* Baby blue for the logo text */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #d1e7f0; /* Light blue-gray for links */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #5d8196; /* Slightly brighter blue-gray on hover */
+  color: #fff;
+}
+
+/* Center Content */
+.center {
+  margin-left: 10px; /* Reduced left margin to move it more to the left */
+  margin-top: 200px; /* Added a negative top margin to push it upwards */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  background-color: #e0f7ff; /* Light baby blue for the main content background */
+}
+
+
+.welcome-content {
+  padding: 2rem;
+}
+
+.center h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333; /* Dark gray for the heading */
+}
+
+.center h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #4a647a; /* Blue-gray for the subheading */
+}
+
+.center p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666; /* Medium gray for the paragraph text */
+}
+
+.center button {
+  background-color: #4a647a; /* Blue-gray for buttons */
+  color: #e0f7ff; /* Baby blue for button text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.center button:hover {
+  background-color: #5d8196; /* Brighter blue-gray on hover */
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .center {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
