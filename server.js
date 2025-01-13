@@ -10,7 +10,7 @@ app.use(express.static("public"));
 
 // Create a SerialPort connection
 const serialPort = new SerialPort({
-  path: "/dev/cu.usbserial-1140", // Replace with your Arduino's port
+  path: "/dev/cu.usbserial-1130", // Replace with your Arduino's port
   baudRate: 9600,
 });
 
